@@ -1,0 +1,42 @@
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %link{:href => "style/chart-style.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato", :rel => "stylesheet", :type => "text/css"}
+    %script{:src => "libs/d3/d3.min.js "}
+    %script{:src => "libs/jquery-1.11.2.js"}
+    %script{:src => "app.js"}
+  %body
+    .introduction
+      %h1
+        Assignment 2 - The Coffee Dataset
+
+
+      %p This following graph represents the Profit (Green) and Sales (Orange) vs time.
+
+    %plot
+    .reflection
+      %h1
+        Reflection
+      %ul
+        %li
+          Which tool(s) did you use?
+          %p I used d3 and Tableau. 
+        %li
+          Did you preprocess the data? Why or why not?
+          %p I used python to parse the csv and aggregate sales and profit by month.
+        %li
+          What visual mappings / representations did you choose? Why those?
+          %p I chose a dual y-axis line graph. This is a good way to compare quantitative financial data with a temporal component
+        %li
+          Are there any patterns/trends in the data that your visualization highlights?
+          %p Yes, from a financial standpoint I can see that the Coffee company's profits went up during december of 2010. Moreover the company became  profitable (that is, the profits are more than the sales) around the May-June of 2012 period.
+        %li
+          Is your visualization useful? If yes, how so? If no, why not?
+          %p I think my visualization is very useful. It gives a very good overview of the company's financial standing, along with a (if the user hovers on it) detailed month-month report
+        %li
+          Was anything harder than you expected? Easier?
+          %p 
+            There are many examples for d3 line graphs, however none incorporated the features i wanted. It was hard to apply a dual y axis implementation to some features like when you mousehover the two focus circles appear.
+
+

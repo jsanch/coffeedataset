@@ -1,0 +1,86 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 10px;
+  margin: 0;
+  width: 100%;
+}
+
+.introduction {
+  font-size: 14px;
+  margin-left: 10%;
+} 
+
+.reflection{
+  font-size: 14px;
+  margin-left: 10%;
+}
+.introduction %p , .reflection %p {
+  font-size: 14px;
+  margin-left: 10%;
+} 
+
+/*** Graph Lines ***/
+path.line1, path.line2 {
+  fill: none;
+  stroke: #666;
+  stroke-width: 2.5px;
+}
+
+path.line1 {
+  stroke: green;
+}
+
+path.line2 {
+  stroke: orange;
+}path.line2:hover{
+  stroke: blue;
+}
+
+
+/*** Axis ***/
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+/* X */
+.x.axis line {
+  stroke: #000;
+  stroke-opacity: 0.1;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.x.axis g.tick{
+  font-size: 10px;
+  padding-top: 10px;
+}
+
+/* Y */
+.y1.axis line, .y2.axis line {
+  stroke: #000;
+  stroke-opacity: 0.0;
+}
+
+.y1.axis line, .y1.axis path {
+  fill: none;
+  stroke: #000;
+}
+
+.y2.axis line, .y2.axis path {
+  fill: none;
+  stroke: #000;
+}
+
+/*Y domain*/
+
+.y1.axis path.domain {
+  stroke:green;
+  stroke-width:2px;
+}
+.y2.axis path.domain {
+  stroke:orange;
+  stroke-width:2px;
+}
